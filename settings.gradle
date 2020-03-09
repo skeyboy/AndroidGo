@@ -1,0 +1,4 @@
+rootProject.name='AndroidGo'
+include ':app'
+include ':logincomponent'
+include ':baselibrary'
