@@ -12,4 +12,10 @@ public class LoginApplication extends Application implements IAppService {
         ServiceFactory.getInstance().setLoginService(new LoginService());
 
     }
+
+    @Override
+    public void initAppFinish() {
+//做一些基础的针对性的配置操作
+
+    }
 }

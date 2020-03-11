@@ -15,6 +15,7 @@ public class MainApplication extends Application {
                 Object object = aClass.newInstance();
                 IAppService iAppService = (IAppService) object;
                 iAppService.initApp(this);
+                iAppService.initAppFinish();
 
             } catch (Exception e) {
                 e.printStackTrace();

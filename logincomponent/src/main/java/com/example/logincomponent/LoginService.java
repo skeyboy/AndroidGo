@@ -11,8 +11,9 @@ import com.example.baselibrary.service.ILoginService;
 
 public class LoginService implements ILoginService {
     @Override
-    public void launch(Context context) {
+    public void launch(Context context, String userId) {
         Intent intent = new Intent(context, LoginActivity.class);
+        intent.putExtra("userId", userId);
         context.startActivity(intent);
     }
 

@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 public interface ILoginService {
-    void launch(Context context);
+    void launch(Context context, String userId);
 
     public Fragment getFragment(FragmentManager fragmentManager, int viewId, ViewGroup root);
 }

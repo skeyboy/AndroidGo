@@ -18,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
     public void launchLogin(View view) {
         ServiceFactory.getInstance()
                 .getLoginService()
-                .launch(this);
+                .launch(this, "123");
     }
 }
