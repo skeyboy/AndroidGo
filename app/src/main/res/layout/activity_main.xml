@@ -17,9 +17,46 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:onClick="launchLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="启动Login">/>
-    </Button>
+        android:onClick="launchLogin"
+        android:text="启动Login">/></Button>
+
+    <com.example.androidgo.CirCleView
+        android:background="@color/RGB_E6E9ED"
+        android:layout_width="200dp"
+        app:mBackCircleColor="@color/colorAccent"
+        app:mBackCircleWidth="@dimen/px_to_dip_12"
+        app:mOuterCircleColor="@color/RGB_FF8209"
+        app:mOuterCircleColorWitdth="10dp"
+        app:mPadding="5dp"
+        app:mPercent="0.3"
+        app:mTitleTextColor="@color/colorPrimaryDark"
+        app:mTitleTextSize="20sp"
+        app:mTitle="当前进度"
+        android:layout_height="200dp" />
+
+    <com.example.androidgo.ProgressView
+        android:id="@+id/progress1"
+        android:layout_width="@dimen/px_to_dip_230"
+        android:layout_height="111dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_to_dip_230"
+        app:backCircleColor="@color/RGB_E6E9ED"
+        app:backCircleWidth="@dimen/px_to_dip_8"
+        app:edgeDistance="@dimen/px_to_dip_20"
+        app:endCircleColor="@color/RGB_FF8209"
+        app:endCircleWidth="@dimen/px_to_dip_24"
+        app:numTextColor="@color/RGB_FF8209"
+        app:numTextSize="@dimen/px_to_dip_48"
+        app:outerCircleColor="@color/RGB_FF8209"
+        app:outerCircleWidth="@dimen/px_to_dip_14"
+        app:progress_num="1026"
+        app:progress_title="饮食摄入"
+        app:progress_unit="kcal"
+        app:titleTextColor="@color/RGB_656D78"
+        app:titleTextSize="@dimen/px_to_dip_24"
+        app:unitTextColor="@color/RGB_FF8209"
+        app:unitTextSize="@dimen/px_to_dip_24" />
+
 </LinearLayout>
